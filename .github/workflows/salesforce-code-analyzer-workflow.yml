@@ -1,6 +1,10 @@
 name: Salesforce Code Analyzer Workflow
-on: pull_request
-types: [dev, test, main]
+on: 
+  pull_request:
+    branches:
+      - dev
+      - test
+      - main
 jobs:
   salesforce-code-analyzer-workflow:
     runs-on: ubuntu-latest
