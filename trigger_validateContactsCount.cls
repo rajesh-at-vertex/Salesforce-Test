@@ -21,6 +21,7 @@ if (!trigger.new.isEmpty()) {
 for (Contact con : trigger.new) {
 if (con.AccountId != null && contactCountMap.containsKey(con.AccountId) && contactCountMap.get(con.AccountId) >= 2) {
 con.addError('You cannot insert this contact as there are already 2 contacts present on this account');
+
 }
 }
 }
